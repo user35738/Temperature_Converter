@@ -58,7 +58,7 @@ temperature-converter/
 ├── style.css
 ├── index.js
 ├── favicon.svg
-├── screenshot.png
+├── temprature-converter.jpg
 └── README.md
 ```
 
