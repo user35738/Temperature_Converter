@@ -2,6 +2,8 @@
 
 A modern, minimalist temperature converter built with HTML, CSS, and JavaScript. Convert temperatures between Celsius, Fahrenheit, and Kelvin with a clean interface and instant results.
 
+![Project Screenshot](temprature-converter.jpg)
+
 ## ✨ Features
 
 - 🌡️ Convert between Celsius, Fahrenheit, and Kelvin
