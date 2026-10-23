@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#f5f7fb"
+    />
+    <meta
+      name="description"
+      content="A simple, modern temperature converter for Celsius, Fahrenheit, and Kelvin."
+    />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" /> l l l
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="converter" aria-labelledby="page-title">
+        <header class="header">
+          <div class="brand-icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 14.76V5a3 3 0 0 0-6 0v9.76a5 5 0 1 0 6 0Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11 12V5"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+              <circle cx="11" cy="18" r="2" fill="currentColor" />
+            </svg>
+          </div>
+
+          <p class="eyebrow">EVERYDAY UTILITY</p>
+          <h1 id="page-title">Temperature<br />converter<span>.</span></h1>
+          <p class="subtitle">
+            Convert between Celsius, Fahrenheit, and Kelvin instantly.
+          </p>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="section-heading">
+          <span>Temperature units</span>
+          <span class="live-status">
+            <span class="status-dot"></span>
+            Live conversion
+          </span>
+        </div>
+
+        <div class="temp-list">
+          <div class="temp-container">
+            <label for="celsius">
+              <span class="unit-symbol celsius-symbol">°C</span>
+              <span class="unit-name">
+                <strong>Celsius</strong>
+                <small>Metric scale</small>
+              </span>
+            </label>
+
+            <input
+              type="number"
+              step="any"
+              inputmode="decimal"
+              name="celsius"
+              id="celsius"
+              placeholder="0.00"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+
+          <div class="temp-container">
+            <label for="fahrenheit">
+              <span class="unit-symbol fahrenheit-symbol">°F</span>
+              <span class="unit-name">
+                <strong>Fahrenheit</strong>
+                <small>Imperial scale</small>
+              </span>
+            </label>
+
+            <input
+              type="number"
+              step="any"
+              inputmode="decimal"
+              name="fahrenheit"
+              id="fahrenheit"
+              placeholder="32.00"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+
+          <div class="temp-container">
+            <label for="kelvin">
+              <span class="unit-symbol kelvin-symbol">K</span>
+              <span class="unit-name">
+                <strong>Kelvin</strong>
+                <small>Scientific scale</small>
+              </span>
+            </label>
+
+            <input
+              type="number"
+              step="any"
+              inputmode="decimal"
+              name="kelvin"
+              id="kelvin"
+              placeholder="273.15"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+        </div>
+
+        <button class="reset-button" id="reset-button" type="button">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 4v6h6M5.5 15a7 7 0 1 0 .5-7"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Reset values
+        </button>
+
+        <footer class="footer">
+          <span>Simple by design.</span>
+          <span>Precise by nature.</span>
+        </footer>
+      </section>
+
+      <p class="page-note">
+        One value in. All units updated.
+      </p>
+    </main>
+  </body>
+</html>
